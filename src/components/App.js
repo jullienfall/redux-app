@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <Header />
-        <p>{this.props.children}</p>
+        <div>{this.props.children}</div>
       </div>
     );
   }
