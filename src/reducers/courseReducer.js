@@ -1,4 +1,4 @@
-import { CREATE_COURSE } from './../actions/courseActions';
+import { CREATE_COURSE, LOAD_COURSES_SUCCESS } from './../actions/courseActions';
 
 const courseReducer = (state = [], action) => {
   switch(action.type) {
@@ -7,8 +7,12 @@ const courseReducer = (state = [], action) => {
         Object.assign({}, action.course)
       ];
 
+    case LOAD_COURSES_SUCCESS:
+      return action.courses;
+
     default:
       return state;
   }
-}
+};
+
 export default courseReducer;
