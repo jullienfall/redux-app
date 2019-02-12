@@ -26,18 +26,18 @@ class LoadingDots extends Component {
       text += '.';
       dots--;
     }
-    return <span {...this.props}>{text}&nbsp;</span>
+    return <span {...this.props}>{text}&nbsp;</span>;
   }
 }
 
 LoadingDots.defaultProps = {
   interval: 300,
-  dots: 3,
-}
+  dots: 3
+};
 
 LoadingDots.propTypes = {
   interval: PropTypes.number,
-  dots: PropTypes.number,
-}
+  dots: PropTypes.number
+};
 
 export default LoadingDots;

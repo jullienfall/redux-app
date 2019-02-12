@@ -5,7 +5,6 @@ import Header from './common/Header';
 
 class App extends Component {
   render() {
-    console.log(this.props);
     return (
       <div className="container-fluid">
         <Header loading={this.props.loading} />
@@ -26,4 +25,4 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-export default connect(mapStateToProps, null)(App);
+export default connect(mapStateToProps)(App);
